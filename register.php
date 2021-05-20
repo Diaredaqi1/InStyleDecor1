@@ -1,18 +1,17 @@
 <?php 
-
-
+include 'database.php';
 
 error_reporting(0);
 
 session_start();
 
 if (isset($_SESSION['username'])) {
-    header("Location: index.php");
+    header("Location: login.php");
 }
 
 if (isset($_POST['submit'])) {
-	$username = $_POST['username'];
-	$email = $_POST['email'];
+	$username = mysqli_real_escape_string($conn,$_POST['username']);
+	$email = mysqli_real_escape_string($conn,$_POST['email']);
 	$password = md5($_POST['password']);
 	$cpassword = md5($_POST['cpassword']);
 
@@ -30,17 +29,16 @@ if (isset($_POST['submit'])) {
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {
-				echo "<script>alert('Woops! Something Wrong Went.')</script>";
+				echo "<script>alert('Something Went Wrong.')</script>";
 			}
 		} else {
-			echo "<script>alert('Woops! Email Already Exists.')</script>";
+			echo "<script>alert('Email Already Exists.')</script>";
 		}
 		
 	} else {
 		echo "<script>alert('Password Not Matched.')</script>";
 	}
 }
-
 ?>
 
 <!DOCTYPE html>
