@@ -1,6 +1,6 @@
 <?php 
 
-
+include 'database.php';
 
 session_start();
 
@@ -24,6 +24,7 @@ if (isset($_POST['submit'])) {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}
 }
+
 
 ?>
 
