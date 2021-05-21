@@ -1,6 +1,9 @@
 <?php 
 
 include 'database.php';
+include 'dbh.php';
+include 'user.php';
+include 'viewusers.php';
 
 session_start();
 
@@ -44,6 +47,7 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
+			
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
@@ -65,6 +69,28 @@ if (isset($_POST['submit'])) {
 			?>
 			<a href="resetpassword.php">Forgot your password?</a></p>
 		</form>
+			<div style="text-align:center;">
+			<input id="button" type="submit"  value="Taken usernames" style="
+		background-color:white;
+		color:black;
+		text-align:center;
+		">  
+			<div id="users" style="display:none;">
+			<?php
+					$users = new ViewUsers();
+					$users ->showAllUsers();
+			?>
+			</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$("#button").click(function () 
+			{
+				$("#users").slideToggle(500);
+			}
+			);
+		});
+	</script>
 	</div>
 </body>
 </html>
