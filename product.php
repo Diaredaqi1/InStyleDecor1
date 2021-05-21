@@ -163,7 +163,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/g.png" alt="#"/>
-              <div class="overlay_hover"> <button><a class="add-bt" href="insert.php">+ Add to cart</a></button> </div>
+              <div class="overlay_hover"><a class="add-bt" href="cart.php">Buy</a></div>
             </div>
           </div>
           <div class="product_detail text_align_center">
