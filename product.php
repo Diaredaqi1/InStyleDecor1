@@ -55,6 +55,7 @@
                 <li> <a href="blog.php">Blog</a></li>
                 <li> <a href="contact.php">Contact us</a></li>
                 <li><a href="cart.php">Cart</a></li>
+                <li><a href="hangman1.php">Game</a></li>
             </ul>
 
         </nav>
