@@ -1,3 +1,29 @@
+<?php
+if(isset($_POST['Name']) && isset($_POST['Message']))
+{  
+	$teksti1 = trim($_POST['Name']) . " ";
+	$teksti2 = trim($_POST['Message']) . " ";
+	$filename = "info.txt"; 
+	$file = fopen($filename, "w" );
+	try{
+		if($file == false){
+			echo "Error in opening new file";
+			throw new Exception();
+		}
+		else{
+			fwrite( $file, $teksti1);
+			fwrite( $file, $teksti2);
+			fclose( $file );
+		}
+	}
+	catch(Exception $ex){
+		echo "Ky eshte gabimi: ".$ex ."<br>";
+	}
+	finally{
+		
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
