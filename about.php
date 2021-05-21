@@ -72,7 +72,9 @@
                <div class="col-md-8 offset-md-2">
                   <div class="title">
                      <h2>About</h2>
-                    
+                      <?php
+                     echo substr("About Us",0);
+                     ?>
                   </div>
                </div>
             </div>
