@@ -307,7 +307,11 @@ By using our website, you agree to our cookie policy!
                         <div class="col-md-12">
                             <div class="title">
                                 <h2>Featured <strong class="black">Brands</strong></h2>
-
+                                 <?php
+                                $str = "FURNITURE";
+                                echo $str . "<br>";
+                                echo trim($str,"FUR");
+                                ?>
                             </div>
                         </div>
                     </div>
