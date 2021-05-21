@@ -8,7 +8,7 @@ $database = "instyledecor";
 $conn = mysqli_connect($server, $user, $pass, $database);
 
 if (!$conn) {
-    die("<script>alert('Connection Failed.')</script>");
+    die("Connection failed : ".mysqli_connect_error());
 }
 
 ?>
