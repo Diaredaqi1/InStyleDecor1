@@ -67,6 +67,7 @@
          <button id="btn1">Next</button>
       </form>
       <br><br><br>
-      <p><a href=cookie1.php>Start a new cookie </a> | <a href=cookie2.php>Check the cookie </a> | <a href=cookie3.php>Remove the cookie </a></p>
+      <p><a href=cookie1.php>Start a new cookie </a> | <a href=cookie2.php>Check the cookie </a> | <a href=cookie3.php>Remove the cookie </a>
+         <br><br><a href="index.php">Return Home</a></p>
    </body>
 </html>
