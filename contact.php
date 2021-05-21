@@ -123,7 +123,7 @@ if(isset($_POST['Name']) && isset($_POST['Message']))
                    </div>
                </div>
                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                <form class="main_form">
+                <form class="main_form" action="sendemail.php">
                    <?php
                 $str = "boxes";
                 printf("Fill the empty %s.",$str);
