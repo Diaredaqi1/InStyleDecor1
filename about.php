@@ -89,6 +89,10 @@
         <h3>About us</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
         <a href="#">Read More</a>
+                 <?php
+           $arr = array('Best','Chair','in','Niture!');
+           echo implode (" ",$arr)."<br>";
+          ?>
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
