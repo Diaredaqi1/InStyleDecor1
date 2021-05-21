@@ -50,10 +50,12 @@ if (isset($_POST['submit'])) {
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 	<title>Register Form - Pure Coding</title>
 </head>
 <body>
+<a href="index.php"><img src="images/home.png" style="position:fixed;left:5px;top:5px;"></a>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
