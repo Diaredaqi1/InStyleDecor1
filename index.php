@@ -1,3 +1,6 @@
+<?php
+require 'database.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +30,7 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
      <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -394,6 +398,35 @@ By using our website, you agree to our cookie policy!
                     </div>
                 </div>
             </div>
+            <p  style = "color:black ; font-weight :bold ; font-size:40px;margin-top:30px;margin-bottom:15px;">Reviews</p>
+            <script>
+                $(document).ready(function() {
+                var commentCount = 2 ;
+                $("#ajax").click(function() {
+                    commentCount = commentCount + 2 ;
+                    $(".comments").load("load.php", {newCommentcount : commentCount});
+                });
+            });
+            </script>
+            <div class="comments">
+        <?php
+            $sql = "SELECT * FROM comments LIMIT 2";
+            $result = mysqli_query($conn , $sql);
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<p>";
+                    echo "<img src=\"icon/1.png\"> ".$row['author'];
+                    echo "<br>";
+                    echo "<i>Comment:   </i>".$row['message'];
+                    echo "</p>";
+                }
+            }
+            else{
+                echo "There are no comments!";
+            }
+        ?>
+    </div>
+    <button id="ajax" style= "margin-left:20px;margin-top:15px;">Show more comments </button>
             <!-- end map -->
             <!--  footer -->
           <?php
