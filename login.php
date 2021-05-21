@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 
-	<title>Login Form - Pure Coding</title>
+	<title>Login</title>
 </head>
 
 <body>
@@ -55,6 +55,15 @@ if (isset($_POST['submit'])) {
 				<button name="submit" class="btn">Login</button>
 			</div>
 			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+			<p class="login-register-text" style="text-align:center;">
+			<?php
+				if(isset($_GET["newpwd"])){
+					if($_GET["newpwd"]=="passwordupdated"){
+						echo '<p class ="login-register-text">Your password has been reset!</p>';
+					}
+				}
+			?>
+			<a href="resetpassword.php">Forgot your password?</a></p>
 		</form>
 	</div>
 </body>
