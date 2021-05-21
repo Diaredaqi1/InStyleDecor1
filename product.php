@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -55,7 +57,6 @@
                 <li> <a href="blog.php">Blog</a></li>
                 <li> <a href="contact.php">Contact us</a></li>
                 <li><a href="cart.php">Cart</a></li>
-                <li><a href="hangman1.php">Game</a></li>
             </ul>
 
         </nav>
@@ -87,12 +88,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/a.jpg" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="cart.php">Buy</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Grey Sofa</p>
           </div>
         </div>
       </div>
@@ -102,12 +103,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/unnamed.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="cart.php">Buy</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Pink Couch</p>
           </div>
         </div>
       </div>
@@ -117,12 +118,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/j.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="cart.php">Buy</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Grey BedSide Table</p>
           </div>
         </div>
       </div>
@@ -132,12 +133,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/c.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="cart.php">Buy</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Wooden BedSide Table</p>
           </div>
         </div>
       </div>
@@ -147,12 +148,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/d.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="cart.php">Buy</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Blue Couch</p>
           </div>
         </div>
       </div>
@@ -162,12 +163,12 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="images/g.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
+              <div class="overlay_hover"> <button><a class="add-bt" href="insert.php">+ Add to cart</a></button> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
             <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_descr">Flower Vase</p>
           </div>
         </div>
       </div>
